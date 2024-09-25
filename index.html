@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- ============== DAISYUI & TAILWIND CSS CDN ============== -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- ============== CUSTOMIZE TAILWIND SCRIPT ============== -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'nav-color': '#F9F7F3',
+                        'nav-color1': 'rgba(249, 247, 243, .55)',
+                        'nav-color2': 'rgba(255, 255, 255, .98)',
+                        'highlighted-color': '#B4F461',
+                        'textHeadline-color': '#111111',
+                        'textBody-color': 'rgba(17, 17, 17, 0.7)',
+                        'inputPlaceholder-color': 'rgba(17, 17, 17, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <!-- ============== GOOGLE FONTS ============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .font-lexend{
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-lexend">
+    <!-- =========================================================
+                        HEADER PART START
+     ========================================================= -->
+    <header class="sticky top-0 bg-nav-color2">
+        <nav class="bg-nav-color1">
+            <div class="navbar w-11/12 mx-auto pt-5 pb-11">
+                <div class="navbar-start">
+                    <a href="blog.html"><button id="blog-btn" class="text-xl font-semibold text-textHeadline-color bg-highlighted-color px-8 py-3 rounded-lg">Blog</button></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <img src="images/logo.png" alt="Donate Bangladesh Logo">
+                    <h4 class="text-xl font-semibold text-textHeadline-color ml-4 my-4">Donate Bangladesh</h4>
+                </div>
+                <div class="navbar-end">
+                    <img src="images/coin.png" alt="Coin Png">
+                    <h4 id="account-balance" class="text-xl font-medium text-textBody-color ml-2">5500 BDT</h4>
+                </div>
+            </div>
+        </nav>
+
+        <section class="pt-20 pb-7  text-center">
+            <button id="donate-page-btn" class="text-xl font-semibold text-textHeadline-color bg-highlighted-color border-2 border-highlighted-color px-8 py-3 rounded-lg">Donation</button>
+            <button id="transection-page-btn" class="text-xl font-semibold text-textHeadline-color border-2 border-state-300 px-8 py-3 rounded-lg ml-3">History</button>
+        </section>
+    </header>
+    <!-- =========================================================
+                        HEADER PART END
+     ========================================================= -->
+
+
+
+    <!-- =========================================================
+                        MAIN BODY PART START
+     ========================================================= -->
+    <main id="donate-page" class="w-11/12 mx-auto mb-20">
+
+        <!-- ----- CARD ITEM 1 ----- -->
+        <section class="p-8 border-2 border-nav-color flex items-center rounded-2xl">
+            <!-- ----- INAGE CONTENT ----- -->
+            <div class="w-2/5 mr-8">
+                <img src="images/noakhali.png" alt="Noakhali Flood">
+            </div>
+
+            <!-- ----- TEXT CONTENT ----- -->
+            <div class="w-3/5">
+                <button class="flex items-center text-base font-normal text-textbody-color bg-nav-color p-4 rounded-lg">
+                    <img class="mr-2" src="images/coin.png" alt="Coin">
+                    <span id="noakhali-raised-fund-amount">0 BDT</span>
+                </button>
+
+                <h4 class="text-xl font-bold text-textHeadline-color mt-3 mb-5">Donate for Flood at Noakhali, Bangladesh</h4>
+
+                <h6 class="text-base font-light text-textBody-color">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</h6>
+
+                <div class="form-control">
+                    <input id="noakhali-donate-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered mt-5 p-4 placeholder:text-base placeholder:font-light placeholder:text-inputPlaceholder-color" required />
+                </div>
+
+                <div id="noakhali-donate-btn" class="mt-4 bg-highlighted-color p-4 rounded-lg text-center cursor-pointer">
+                    <button class="text-xl font-semibold text-textbody-color">Donate Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----- CARD ITEM 2 ----- -->
+        <section class="mt-8 p-8 border-2 border-nav-color flex items-center rounded-2xl">
+            <!-- ----- INAGE CONTENT ----- -->
+            <div class="w-2/5 mr-8">
+                <img src="images/feni.png" alt="Feni Flood">
+            </div>
+
+            <!-- ----- TEXT CONTENT ----- -->
+            <div class="w-3/5">
+                <button class="flex items-center text-base font-normal text-textbody-color bg-nav-color p-4 rounded-lg">
+                    <img class="mr-2" src="images/coin.png" alt="Coin">
+                    <span id="feni-raised-fund-amount">600 BDT</span>
+                </button>
+
+                <h4 class="text-xl font-bold text-textHeadline-color mt-3 mb-5">Donate for Flood Relief in Feni, Bangladesh</h4>
+
+                <h6 class="text-base font-light text-textBody-color">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</h6>
+
+                <div class="form-control">
+                    <input id="feni-donate-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered mt-5 p-4 placeholder:text-base placeholder:font-light placeholder:text-inputPlaceholder-color" required />
+                </div>
+
+                <div id="feni-donate-btn" class="mt-4 bg-highlighted-color p-4 rounded-lg text-center cursor-pointer">
+                    <button class="text-xl font-semibold text-textbody-color">Donate Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----- CARD ITEM 3 ----- -->
+        <section class="mt-8 p-8 border-2 border-nav-color flex items-center rounded-2xl">
+            <!-- ----- INAGE CONTENT ----- -->
+            <div class="w-2/5 mr-8">
+                <img src="images/quota-protest.png" alt="Quota-Protest">
+            </div>
+
+            <!-- ----- TEXT CONTENT ----- -->
+            <div class="w-3/5">
+                <button class="flex items-center text-base font-normal text-textbody-color bg-nav-color p-4 rounded-lg">
+                    <img class="mr-2" src="images/coin.png" alt="Coin">
+                    <span id="quota-raised-fund-amount">2400 BDT</span>
+                </button>
+
+                <h4 class="text-xl font-bold text-textHeadline-color mt-3 mb-5">Aid for Injured in the Quota Movement</h4>
+
+                <h6 class="text-base font-light text-textBody-color">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</h6>
+
+                <div class="form-control">
+                    <input id="quota-donate-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered mt-5 p-4 placeholder:text-base placeholder:font-light placeholder:text-inputPlaceholder-color" required />
+                </div>
+
+                <div id="quota-donate-btn" class="mt-4 bg-highlighted-color p-4 rounded-lg text-center cursor-pointer">
+                    <button class="text-xl font-semibold text-textbody-color">Donate Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ----- TRANSECTION HISTORY ----- -->
+    <main id="transection-page" class="hidden w-11/12 mx-auto mb-20">
+        <div id="transection-container">
+        </div>
+    </main>
+    <!-- =========================================================
+                        MAIN BODY PART END
+     ========================================================= -->
+
+
+
+    <!-- =========================================================
+                          MODAL PART START
+     ========================================================= -->
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box text-center">
+            <h2 class="text-3xl font-bold text-textHeadline-color pb-4">Congrates!</h2>
+            <img class="mx-auto" src="images/coin.png" alt="Coin Png">
+            <p class="py-4 text-base font-medium text-textBody-color">You Have Donated for HumanKind</p>
+            <h4 class="text-xl font-semibold text-textHeadline-color">Successfully</h4>
+            <div class="flex justify-center modal-action">
+                <form method="dialog">
+                    <button class="btn">close confirmation</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+    <!-- =========================================================
+                          MODAL PART END
+     ========================================================= -->    
+    
+
+
+    <!-- =========================================================
+                          FOOTER PART START
+     ========================================================= -->
+    <footer class="bg-nav-color h-36">
+    </footer>
+    <!-- =========================================================
+                          FOOTER PART END
+     ========================================================= -->
+
+
+    <!-- =========================================================
+                        JS SCRIPT PART START
+     ========================================================= -->
+    <script src="js/utilities.js"></script>
+    <script src="js/noakhali.js"></script>
+    <script src="js/feni.js"></script>
+    <script src="js/quota.js"></script>
+    <script src="js/features.js"></script>
+    <!-- =========================================================
+                        JS SCRIPT PART END
+     ========================================================= -->
+    
+</body>
+</html>
