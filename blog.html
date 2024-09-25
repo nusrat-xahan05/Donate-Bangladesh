@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- ============== DAISYUI & TAILWIND CSS CDN ============== -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- ============== CUSTOMIZE TAILWIND SCRIPT ============== -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'nav-color': '#F9F7F3',
+                'nav-color1': 'rgba(249, 247, 243, .55)',
+                'nav-color2': 'rgba(255, 255, 255, .98)',
+                'highlighted-color': '#B4F461',
+                'textHeadline-color': '#111111',
+                'textBody-color': 'rgba(17, 17, 17, 0.7)',
+                'inputPlaceholder-color': 'rgba(17, 17, 17, 0.4)',
+              }
+            }
+          }
+        }
+    </script>
+
+
+    <!-- ============== GOOGLE FONTS ============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .font-lexend{
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-lexend">
+    <!-- =========================================================
+                        HEADER PART START
+     ========================================================= -->
+    <header class="sticky top-0 bg-nav-color2 z-30">
+        <nav class="bg-nav-color1">
+            <div class="navbar w-11/12 mx-auto pt-5 pb-11">
+                <div class="navbar-start">
+                    <a href="index.html"><button id="home-btn" class="text-xl font-semibold text-textHeadline-color bg-highlighted-color px-8 py-3 rounded-lg">Home</button></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <img src="images/logo.png" alt="Donate Bangladesh Logo">
+                    <h4 class="text-xl font-semibold text-textHeadline-color ml-4 my-4">Donate Bangladesh</h4>
+                </div>
+                <div class="navbar-end">
+                    <img src="images/coin.png" alt="Coin Png">
+                    <h4 class="text-xl font-medium text-textBody-color ml-2">5500 BDT</h4>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- =========================================================
+                        HEADER PART END
+     ========================================================= -->
+
+
+
+    <!-- =========================================================
+                        MAIN BODY PART START
+     ========================================================= -->
+    <main class="w-11/12 mx-auto my-20">
+        <section>
+            <h2 class="font-bold text-3xl mb-8">Important FAQ</h2>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-semibold text-textHeadline-color">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content font-medium text-textBody-color">
+                    <p>The Document Object Model (DOM) is a programming interface for web. DOM allows JavaScript to interact with and manipulate the structure, content, and style of web pages. Such as: DOM allows JavaScript to change all the HTML elements, HTML attributes & all the CSS styles in the page, remove existing HTML elements and attributes, dd new HTML elements and attributes, react to all existing HTML events in the page</p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-semibold text-textHeadline-color">How do you select an element from the DOM?</div>
+                <div class="collapse-content font-medium text-textBody-color">
+                    <p>
+                        Followings are the methods to select an element from the DOM: <br>
+                        &emsp; &emsp; 1. document.getElementsByTagName()</pre><br>
+                        &emsp; &emsp; 2. document.getElementById() <br>
+                        &emsp; &emsp; 3. document.getElementsByClassName() <br>
+                        &emsp; &emsp; 4. document.querySelectorAll() <br>
+                        &emsp; &emsp; 5. document.querySelector() <br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-semibold text-textHeadline-color">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content font-medium text-textBody-color">
+                    <p>Event delegation in the pattern of the DOM, where a single event listener is added to a parent element to manage events triggered by its child elements. <br>
+                    Event Delegation improves the performance, simplifies the code by reducing repeatation & handle the content dynamically.</p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-semibold text-textHeadline-color">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content font-medium text-textBody-color">
+                    <p>To manipulate an element's attributes using the DOM, there are mainly two methods: <br>
+                        &emsp; &emsp; 1. setAttribute(): Use element.setAttribute('attributeName', 'value') to set or update an attribute<br>
+                        &emsp; &emsp; 2. getAttribute(): Use element.getAttribute('attributeName') to retrieve the value from that attribute. <br>
+                        Sometimes element.removeAttribute('attributeName') is used to remove an attribute.
+                        <br><br>
+                        To manipulate an element's styles using the DOM, there are also two methods: <br>
+                        &emsp; &emsp; 1. propertyName: element.style.propertyName = 'value' is used to change a specific CSS property<br>
+                        &emsp; &emsp; 2. className: element.className is used to change its styles based on predefined CSS classes. ClassList property can also use which provides methods like add(), remove(), and toggle(). Such as, element.classList.add(className).
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <!-- =========================================================
+                        MAIN BODY PART END
+     ========================================================= -->
+
+
+
+    <!-- =========================================================
+                          FOOTER PART START
+     ========================================================= -->
+    <footer class="bg-nav-color h-36">
+    </footer>
+    <!-- =========================================================
+                          FOOTER PART END
+     ========================================================= -->
+    
+    <script src="js/features.js"></script>
+    
+</body>
+</html>
